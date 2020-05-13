@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<img src="img\on.jpg" id="changpic" title="on pic" style="cursor: pointer;" onclick="changepic()"/>
+
+<script type="text/javascript">
+
+    function changepic() {
+        let cpic=document.getElementById("changpic");
+        //alert(cpic.getAttribute("src").search("on"));
+        if(cpic.getAttribute("src").search("on")>-1) {
+            cpic.setAttribute("src","img\\off.jpg");
+            cpic.setAttribute("title","off pic")
+        }else{
+            cpic.setAttribute("src","img\\on.jpg");
+            cpic.setAttribute("title","on pic")
+        }
+    }
+
+</script>
+
+</body>
+</html>

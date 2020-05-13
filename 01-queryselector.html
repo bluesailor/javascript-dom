@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<form name="userform" id="myform">
+<input type="text" name="username" id="myname" class="clsMyname" value="">
+<input type="button" name="btnSubmit" value="点我提交">
+</form>
+
+
+<script type="text/javascript">
+    let myUsername = document.querySelector(".clsMyname");
+    myUsername.setAttribute("value","this is my js name");
+    let myUsernameTxt = myUsername.value;
+    //alert(myUsernameTxt);
+</script>
+<script>
+    document.write(myForm.toString());
+</script>
+</body>
+</html>

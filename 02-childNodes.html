@@ -1,0 +1,24 @@
+<html>
+<head>
+ <title>Document</title>
+</head>
+<body>
+<div>
+    this is node1<br/>
+    this is node3<br/>
+    this is node5
+</div>
+<script type="text/javascript">
+    let ctNodes=document.getElementsByTagName("div")[0];
+    alert(document.getElementsByTagName("div")[0].childNodes.length);
+    let i=0;
+    for(let i=0;i<ctNodes.childNodes.length;i++){
+        alert(ctNodes.childNodes[i].nodeValue);
+    }
+    alert("firstChildNodeValue is:"+ctNodes.firstChild.nodeValue);
+    alert("lastChildNodeValue is:"+ctNodes.lastChild.nodeValue);
+</script>
+
+</body>
+</html>
+

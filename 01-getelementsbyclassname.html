@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<form name="userform" id="myform">
+<input type="text" name="username" id="myname" class="clsInput" value="">
+<input type="button" name="btnSubmit" value="点我提交">
+</form>
+
+
+<script type="text/javascript">
+    //注册是Elements 不是Element， 有S是复数，返回的数组。
+    const clsInput = document.getElementsByClassName("clsInput");
+    clsInput[0].value="this is my new name";
+
+    //console.log(clsInput);
+    //alert(clsInput[0].value);
+
+
+</script>
+
+</body>
+</html>
